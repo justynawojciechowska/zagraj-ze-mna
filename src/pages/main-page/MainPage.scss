@@ -1,0 +1,10 @@
+.main-page {
+  height: 50vh;
+  background: url("./../../assets/board-game.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+
+  &__content{
+    position: absolute;
+  }
+}

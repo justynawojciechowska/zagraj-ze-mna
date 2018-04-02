@@ -1,0 +1,55 @@
+//Colors
+$blue-base: #189ACA;
+$blue-light: #6BCDFD;
+$blue-dark: #0290D4;
+$limon: #CDFECE;
+
+//Header
+$header-height: 60px;
+$mobile-header-height: 50px;
+
+// -------------------------------------------------
+// Simpler media queries
+// -------------------------------------------------
+$xsm-breakpoint: 460px;
+$sm-breakpoint: 768px;
+$md-breakpoint: 992px;
+$lg-breakpoint: 1200px;
+$xlg-breakpoint: 1480px;
+$xxlg-breakpoint: 1680px;
+
+$screen: 'only screen';
+$landscape: '#{$screen} and (orientation: landscape)';
+$portrait: '#{$screen} and (orientation: portrait)';
+
+// Retina
+$retina: (
+        '#{$screen} and (-webkit-min-device-pixel-ratio: 2)',
+        '#{$screen} and (min--moz-device-pixel-ratio: 2)',
+        '#{$screen} and (-o-min-device-pixel-ratio: 2/1)',
+        '#{$screen} and (min-device-pixel-ratio: 2)',
+        '#{$screen} and (min-resolution: 192dpi)',
+        '#{$screen} and (min-resolution: 2dppx)'
+);
+
+@mixin retina {
+  @media #{$retina} {
+    @content;
+  }
+}
+
+// Down
+$xsm-down: '#{$screen} and (max-width: #{$xsm-breakpoint - 1})';
+$sm-down: '#{$screen} and (max-width: #{$sm-breakpoint - 1})';
+$md-down: '#{$screen} and (max-width: #{$md-breakpoint - 1})';
+$lg-down: '#{$screen} and (max-width: #{$lg-breakpoint - 1})';
+$xlg-down: '#{$screen} and (max-width: #{$xlg-breakpoint - 1})';
+$xxlg-down: '#{$screen} and (max-width: #{$xxlg-breakpoint - 1})';
+
+// Up
+$xsm-up: '#{$screen} and (min-width: #{$xsm-breakpoint})';
+$sm-up: '#{$screen} and (min-width: #{$sm-breakpoint})';
+$md-up: '#{$screen} and (min-width: #{$md-breakpoint})';
+$lg-up: '#{$screen} and (min-width: #{$lg-breakpoint})';
+$xlg-up: '#{$screen} and (min-width: #{$xlg-breakpoint})';
+$xxlg-up: '#{$screen} and (min-width: #{$xxlg-breakpoint})';

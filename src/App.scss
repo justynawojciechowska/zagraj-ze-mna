@@ -1,0 +1,62 @@
+@import './styles/helpers/variables';
+@import './styles/helpers/mixins';
+@import './styles/base/typography';
+
+body {
+  margin: 0;
+  padding: $header-height 0 0;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.container {
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include sm-up {
+    max-width: 750px;
+    padding: 0;
+  }
+
+  @include md-up {
+    max-width: 950px;
+  }
+
+  @include lg-up {
+    max-width: 1100px;
+  }
+
+  @include xlg-up {
+    max-width: 1200px;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 250px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

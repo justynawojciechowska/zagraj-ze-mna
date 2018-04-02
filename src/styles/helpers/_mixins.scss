@@ -1,0 +1,97 @@
+@import './variables';
+
+@mixin xxsm-down {
+  @media #{$xxsm-down} {
+    @content;
+  }
+}
+
+@mixin xsm-down {
+  @media #{$xsm-down} {
+    @content;
+  }
+}
+
+@mixin sm-down {
+  @media #{$sm-down} {
+    @content;
+  }
+}
+
+@mixin md-down {
+  @media #{$md-down} {
+    @content;
+  }
+}
+
+@mixin lg-down {
+  @media #{$lg-down} {
+    @content;
+  }
+}
+
+@mixin xlg-down {
+  @media #{$xlg-down} {
+    @content;
+  }
+}
+
+@mixin xxlg-down {
+  @media #{$xxlg-down} {
+    @content;
+  }
+}
+
+@mixin xxsm-up {
+  @media #{$xxsm-up} {
+    @content;
+  }
+}
+
+@mixin xsm-up {
+  @media #{$xsm-up} {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @media #{$sm-up} {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @media #{$md-up} {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media #{$lg-up} {
+    @content;
+  }
+}
+
+@mixin xlg-up {
+  @media #{$xlg-up} {
+    @content;
+  }
+}
+
+@mixin xxlg-up {
+  @media #{$xxlg-up} {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media #{$landscape} {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media #{$portrait} {
+    @content;
+  }
+}
